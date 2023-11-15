@@ -42,6 +42,7 @@ public class Main {
         reverseOrderList
                 .forEach(System.out::println);
 
+        //BONUS
         List<Student> exportCsvToObjects = Files.lines(Path.of("students.csv"))
                 .filter(line -> !line.contains("ID"))
                 .filter(line -> !line.isEmpty())
